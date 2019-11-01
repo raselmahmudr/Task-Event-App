@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  font-family: Arial;
+  font-size: 13px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+.title{
+  color: #333333;
+  font-weight: bold;
+  font-family: roboto;
+  text-align: center;
+}
+
+.app_title{
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px 0px 20px 0px;
+  border-bottom: 2px solid rgba(110, 94, 253, 0.836);
+}
+
+.add-task{
+  display: flex;
+
+}
+.input {
+  width: 100%;
+  border: 1px solid #f5411d;
+  box-shadow: 0 0 2px 0px #ff0000c9;
+  outline: none;
+  padding: 3px;
+  border-radius: 3px;
+}
+.add-button{
+  width: 80px;
+  background-color: rgb(39, 122, 231);
+  border: 1px solid #0a5dca;
+  border-radius: 3px;
+  padding: 3px 0px;
+  outline: none;
+  box-shadow: 0 0 2px 0px #0253ebc9;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.add-button:hover{
+  background-color: rgb(0, 108, 250);
+  border: 1px solid #0a5dca;
+}
+.views{
+  margin-top: 30px;
+}
+
+.task_title{
+  text-align: start;
+}
+.tasks-list{
+  list-style: none;
+  padding: 0;
+}
+
+/* .task{
+  border: #333333;
+  color: rgb(253, 251, 251);
+  background: #30a29d;
+  margin: 5px 0px;
+  padding:4px 8px;
+} */
+.task {
+  border: #333333;
+  color: rgb(0, 0, 0);
+  background: #fff3f3;
+  margin: 5px 0px;
+  padding: 4px 8px;
+  box-shadow: inset 0px 0px 6px 1px #c56a73;
+  display: flex;
+  justify-content: space-between;
+}
+.task-controller{
+  display: flex;
+  justify-content: space-between;
+}
+.delete-task,
+.edit-task{
+  width: 15px;
+  height: 15px;
+  color: red;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.edit-task{
+  margin-right: 10px;
+}
+
+.show-error-message{
+  height: 0;
+  font-size: 0;
+  transform: scale(0);
+  color: rgb(230, 230, 230);
+  background-color: rgb(241, 105, 105);
+  box-shadow: 0 0 4px 0px red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-with-animation{
+  font-size: 13px;
+  height: max-content;
+  transform: scale(1);
+  margin: 20px  0px;
+  padding: 8px 10px;
+  border: 1px solid rgb(255, 10, 10);
+  transition: all .4s ease-in-out;
+}
+
+.close_btn{
+  cursor: pointer;
+  color: yellow;
+  font-weight: bold;
+}
+.dismiss_error{
+  height: 0 ;
+  font-size: 0;
+  transform: scale(0);
+  transition: all .4s ease-in-out;
+}
